@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+const readFile = require('fs').readFile;
+const PyMarshal = require('../..');
+
+if (process.argv.length != 3) {
+  die('error you must supply exactly one argument (filename)');
+}
+
+const file = process.argv[2];
+
+
+readFile(process.argv[2], (err, data) => {
+  if (err) {
+    die(`failed to read file '${file}'`, err);
+  }
+  const decoder = new PyMarshal(data);
+  do {
+    const obj = decoder.read();
+    if (obj === undefined) break;
+    console.log(JSON.stringify(obj, null, 2));
+  } while (true);
+});
+
+function die(msgs) {
+  console.error(msgs);
+  process.exit(1);
+}

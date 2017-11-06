@@ -1,0 +1,40 @@
+{
+  "name": "py-marshal",
+  "description": "python object serialize/deserialize for node",
+  "author": "Burl Nyswonger <burl.bn@gmail.com> (https://github.com/burl)",
+  "contributors": [],
+  "license": "MIT",
+  "homepage": "https://github.com/burl/node-py-marshal",
+  "repository": {
+    "url": "github.com/burl/node-py-marshal",
+    "type": "git"
+  },
+  "bugs": "https://github.com/burl/node-py-marshal/issues",
+  "version": "0.0.1",
+  "main": "lib/py-marshal",
+  "files": [
+    "lib/py-marshal"
+  ],
+  "scripts": {
+    "test": "ava --verbose test",
+    "sortpkg": "prettier-package-json",
+    "update-test-data": "python test/bin/gen-test-data.py > test/data/pickle.pyc"
+  },
+  "dependencies": {
+    "ieee754": "^1.1.8"
+  },
+  "devDependencies": {
+    "ava": "^0.23.0"
+  },
+  "keywords": [
+    "deserialize",
+    "marshal",
+    "pickle",
+    "python",
+    "serialize",
+    "shelve"
+  ],
+  "engines": {
+    "node": ">=6.11.5"
+  }
+}
