@@ -13,7 +13,7 @@
   "version": "0.0.1",
   "main": "lib/py-marshal",
   "files": [
-    "lib/py-marshal"
+    "lib/py-marshal.js"
   ],
   "scripts": {
     "test": "ava --verbose test",
