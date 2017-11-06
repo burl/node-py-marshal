@@ -58,17 +58,17 @@ Given javascript-native data, return a buffer with the python marshaled represen
 
 Only a subset of the possible python types are supported (the simpler ones, which translate to JSON equivalents).
 
-| Python Type | JSON type | Notes                                           |
-| ----------- | --------- | ----------------------------------------------- |
-| Null        | undefined | (not a JSON type, but supported/useful)         |
-| None        | null      |                                                 |
-| True, False | boolean   |                                                 |
-| integer     | Number    | 32-bit only, signed/unsigned                    |
-| float       | Number    | Only 32-bit IEEE754 (binary or string encoding) |
-| string      | String    |                                                 |
-| List        | Array     | also: Tuples and Sets                           |
-| Dictionary  | Object    |                                                 |
-|             |           |                                                 |
+| Python Type     | JSON type | Notes                                           |
+| --------------- | --------- | ----------------------------------------------- |
+| Null            | undefined | (not a JSON type, but supported/useful)         |
+| None            | null      |                                                 |
+| Boolean         | boolean   |                                                 |
+| Number: integer | Number    | 32-bit only, signed/unsigned                    |
+| Number: float   | Number    | Only 32-bit IEEE754 (binary or string encoding) |
+| string          | String    |                                                 |
+| List            | Array     | also: Tuples and Sets                           |
+| Dictionary      | Object    |                                                 |
+|                 |           |                                                 |
 
 All other python types that might be encoded are not supported.
 
