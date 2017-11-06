@@ -1,5 +1,7 @@
 # py-marshal - python object serialize/deserialize for node
 
+[![Build Status](https://travis-ci.org/burl/node-py-marshal.svg?branch=master)](https://travis-ci.org/burl/node-py-marshal)
+
 This package is designed to serialize / deserialize the python "internal" marshal format where there are JSON equivalent data types.
 
 ## Installation
