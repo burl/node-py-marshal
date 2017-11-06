@@ -68,7 +68,6 @@ Only a subset of the possible python types are supported (the simpler ones, whic
 | string          | String    |                                                 |
 | List            | Array     | also: Tuples and Sets                           |
 | Dictionary      | Object    |                                                 |
-|                 |           |                                                 |
 
 All other python types that might be encoded are not supported.
 
