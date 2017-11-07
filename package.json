@@ -20,7 +20,7 @@
     "cover": "nyc ava --verbose test",
     "report": "nyc report -r lcov",
     "sortpkg": "prettier-package-json",
-    "update-test-data": "python test/bin/gen-test-data.py > test/data/pickle.pyc"
+    "update-test-data": "python test/bin/gen-test-data.py test/data"
   },
   "dependencies": {
     "ieee754": "^1.1.8"
