@@ -6,25 +6,29 @@
   "license": "MIT",
   "homepage": "https://github.com/burl/node-py-marshal",
   "repository": {
-    "url": "github.com/burl/node-py-marshal",
+    "url": "https://github.com/burl/node-py-marshal",
     "type": "git"
   },
   "bugs": "https://github.com/burl/node-py-marshal/issues",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/py-marshal",
   "files": [
     "lib/py-marshal.js"
   ],
   "scripts": {
     "test": "ava --verbose test",
+    "cover": "nyc ava --verbose test",
+    "report": "nyc report -r lcov",
     "sortpkg": "prettier-package-json",
-    "update-test-data": "python test/bin/gen-test-data.py > test/data/pickle.pyc"
+    "update-test-data": "python test/bin/gen-test-data.py test/data"
   },
   "dependencies": {
     "ieee754": "^1.1.8"
   },
   "devDependencies": {
-    "ava": "^0.23.0"
+    "ava": "^0.23.0",
+    "coveralls": "^3.0.0",
+    "nyc": "^11.3.0"
   },
   "keywords": [
     "deserialize",

@@ -1,6 +1,6 @@
 # py-marshal - python object serialize/deserialize for node
 
-[![Build Status](https://travis-ci.org/burl/node-py-marshal.svg?branch=master)](https://travis-ci.org/burl/node-py-marshal) [![npm version](https://badge.fury.io/js/py-marshal.svg)](https://badge.fury.io/js/py-marshal)
+[![Build Status](https://travis-ci.org/burl/node-py-marshal.svg?branch=master)](https://travis-ci.org/burl/node-py-marshal) [![npm version](https://badge.fury.io/js/py-marshal.svg)](https://badge.fury.io/js/py-marshal) [![Coverage Status](https://coveralls.io/repos/github/burl/node-py-marshal/badge.svg?branch=feature%2Fcoverage)](https://coveralls.io/github/burl/node-py-marshal?branch=feature%2Fcoverage)
 
 This package is designed to serialize / deserialize the python "internal" marshal format where there are JSON equivalent data types.
 

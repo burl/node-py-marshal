@@ -98,3 +98,33 @@ test('kitchen-sink', t => {
   }
   t.deepEqual(roundTrip(input), input)
 })
+
+test('unsupported-py-type', t => {
+  const input = Buffer.from([0x63, 0x00, 0x00])
+  try {
+    PyMarshal.readFromBuffer(input)
+    t.fail()
+  } catch(e) {
+    t.pass()
+  }
+})
+
+test('unsupported-js-type/symbol', t => {
+  try {
+    PyMarshal.writeToBuffer({symbol: Symbol})
+    t.fail()
+  } catch(e) {
+    t.pass()
+  }
+})
+
+test('unsupported-js-type/object', t => {
+  const fun = function() {}
+  const obj = new fun();
+  try {
+    PyMarshal.writeToBuffer({functionObject: obj})
+    t.fail()
+  } catch(e) {
+    t.pass()
+  }
+})
