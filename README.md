@@ -38,7 +38,7 @@ const PyMarshal = require('py-marshal');
 const buffer = GetABufferOfMarshaledDataSomehow();
 const decoder = new PyMarshal(buffer);
 
-while(decoder.MoreData) {
+while(decoder.moreData) {
   const obj = decoder.read();
   DoSomethignWithData(obj); // use your data...
 }
