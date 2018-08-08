@@ -10,7 +10,7 @@
     "type": "git"
   },
   "bugs": "https://github.com/burl/node-py-marshal/issues",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/py-marshal",
   "files": [
     "lib/py-marshal.js"
